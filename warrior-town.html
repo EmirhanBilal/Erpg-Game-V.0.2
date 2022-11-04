@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warrior Town</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="index.js">
+    <style>
+        #conteiner{
+            width: 1220px;
+            height: 820px;
+            background-image: url(Photos/Town/warrior-town.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #warrior-town-container{
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        #warrior-container{
+            text-align: center;
+            margin-top: 270px;
+            margin-right: 50px;
+        }
+        #warrior-image{
+            width: 280px;
+            height: 400px;
+        }
+        #warrior-container p{
+            font-weight: bold;
+            color: red;
+        }
+        .name-level{
+            display: inline-block;
+        }
+        #character-name{
+            background-color: rgb(104, 109, 97);
+            color: black;
+            padding: 5px 10px;
+            font-size: 30px;
+            width: 90px;
+            font-weight: 500;
+        }
+        #character-level-class{
+            background-color: darkred;
+            color: rgb(185, 166, 166);
+            padding: 5px 10px;
+            font-size: 30px;
+            width: 240px;
+        }
+        #character-information{
+            border: 8px solid #854e0e;
+            background-color:#fef08ad0;
+            border-radius: 10px;
+            width:370px;
+            height: 520px;
+        }
+        .exp{
+            background-color: #FDFF00;
+            color: rgb(15, 15, 15);
+            padding: 5px 10px;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .item-bar{
+            display: inline-block;
+            border: 5px solid rgb(27, 27, 27);
+            width: 110px;
+            height: 80px;
+            background-color: #47556944;
+        }
+        
+        #activation-container{
+            height: 200px;
+            display: inline-block;
+        }
+        #fight:hover{
+            background-color: darkred;
+        }
+        #fight:active{
+            background-color: rgb(56, 10, 10);
+        }
+        #fight a{
+            text-decoration: none;
+            font-size: 40px;
+            color: black;
+        }
+        .position-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <h1 style="text-align:center ; margin-top:15px; font-size: 40px;">TOWN</h1>
+        <div id="warrior-town-container">
+            <div class="position-left">
+                <div id="character-information">
+                    <div class="name-level" id="character-name">Emiran</div><div class="name-level" id="character-level-class">Level 1-WARRİOR</div>
+                    <div class="exp">EXP</div>
+                    <br><br><br> <div style="height:3px; background-color:black ;"></div>
+                    <div>
+                        <h3 style="font-weight:600;">ITEMS</h3>
+                    <div class="item-bar"></div>
+                    <div class="item-bar"></div>
+                    <div class="item-bar"></div>
+                    <div class="item-bar"></div>
+                    <div class="item-bar"></div>
+                    <div class="item-bar"></div>
+                    <div class="item-bar"></div>
+                    <div class="item-bar"></div>
+                    <div class="item-bar"></div>
+                    </div>
+                
+                </div>
+                <div style="display: flex;">
+                    <a href="warrior-page.html" id="back-link"><img src="Photos/back homepage.png" alt="back-home-page" id="back"> </a>
+                    <div ><button id="fight">Fight</button></div>
+                </div>
+                
+                
+            </div>
+            
+
+
+            <div id="warrior-container">
+                <img id="warrior-image" src="Photos/medival-knight-png-5a3a8e26810fe5.8281968015137869185287-removebg-preview (4).png" alt="Warrior" height="">
+                <p id="player">Name: Emiran</p>
+                <p>Level: 1</p>
+            </div>
+        </div>
+        <div id="chapters" style="display:none ;">
+            <div class="div-level>"><button>Level 1</button> </div>
+            <div class="div-level>"><button>Level 2</button> </div>
+            <div class="div-level>"><button>Level 3</button> </div>
+            <div class="div-level>"><button>Level 4</button> </div>
+            <div class="div-level>"><button>Level 5</button> </div>
+            <div class="div-level>"><button>Level 6</button> </div>
+            <div class="div-level>"><button>Level 7</button> </div>
+            <div class="div-level>"><button>Level 8</button> </div>
+            <div class="div-level>"><button>Level 9</button> </div>
+            <div class="div-level>"><button>Level 10</button> </div>
+            <div class="div-level>"><button>Level 11</button> </div>
+            <div class="div-level>"><button>Level 12</button> </div>
+            <div class="div-level>"><button>Level 13</button> </div>
+            <div class="div-level>"><button>Level 14</button> </div>
+            <div class="div-level>"><button>Level 15</button> </div>
+            <button id="close-level-page">X</button>
+        </div>
+    </div>  
+    <script src="indx.js"></script>
+</body>
+</html>

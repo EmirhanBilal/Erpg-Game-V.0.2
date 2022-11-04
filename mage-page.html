@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogue page</title>
+    <link rel="stylesheet" href="app.css">
+    <style>
+        #input{
+            border: 10px solid #854d0e;
+            background-color:#fef08abe;
+            width: 660px;
+            border-radius: 10px;
+        }
+        h3{
+            text-align: center;
+            font-size: 50px;
+            color: #dc2626;
+        }
+        #sign-conteiner{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #form-conteiner{
+            text-align:start;
+        }
+        #input{
+            padding-left: 10px;
+        }
+        label,input{
+            font-size: 30px;
+        }
+        label{
+            font-weight: 400;
+        }
+        input[type=radio] {
+            border: 0px;
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 11px;
+        }
+        input[type=color]{
+            width: 60px;
+            height: 40px;
+        }
+        input[type=text]{
+            width: 360px;
+        }
+        button{
+            font-size: 50px;
+            border-radius: 10px;
+            border: 5px solid black;
+            background-color: #dc2626;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            margin: auto;
+            margin-bottom: 5px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: darkred;
+            box-shadow: 0 0 5px #854d0e;
+        }
+        #mage{
+            height: 730px;
+            width: 400px;
+            margin: 0;
+        }
+        form img{
+            width: 500px;
+            height: 80px;
+        }
+        span{
+            color: purple;
+            font-size: 30px;
+        }
+        #conteiner{
+            background-image: url('Photos/mage\ background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="game-name">E-rpg <span id="game-span">Game</span></h1>
+    <div id="conteiner">
+        <form action="mage-town.html" id="form-conteiner">
+            <h3>MAGE</h3>
+            <div id="sign-conteiner">
+                <div id="input">
+                    <form action="create">
+                    <label for=""><span>Gender:</span> </label><br>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" required> <br> <br> <br>
+                    <label for=""><span> Hair Type:</span></label> <br>
+                    <label for="bald">Bald</label> <input type="radio" name="hair" id="bald" required> 
+                    <label for="short">Short</label> <input type="radio" name="hair" id="short" required > 
+                    <label for="long">Long</label> <input type="radio" name="hair" id="long" required>  <br> <br> <br>
+                    <label for="color"><span> Hair Color:</span></label>
+                    <input type="color" id="color"> <br> <br>
+                    <label for="player-name"><span> Player Name:</span></label>
+                    <input type="text" id="player-name"  name="player-name" required> <br> <br> <br>
+                    <label for=""><span>Skills:</span> </label> <br> <img src="Photos/mage skills.png" alt="warrior skills" id="warrior-skills">
+                    <br> <br>
+
+                    <button type="submit">Create</button>
+
+                    <a href="index.html"><img src="Photos/back homepage.png" alt="back-home-page" id="back-home-page"> </a>
+                    </form>
+                </div>
+                <div>
+                    <img id="mage" src="Photos/png-transparent-drakensang-online-drakensang-the-dark-eye-mu-online-monster-hunter-freedom-browser-game-mage-game-fictional-character-quest-thumbnail-removebg-preview.png" alt="Mage">
+                </div>
+                
+            </div>
+            
+        </form>
+    </div>  
+</body>
+</html>

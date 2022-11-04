@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#game-name{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 85px;
+
+}
+#game-span{
+    font-family: 'Creepster', cursive;
+    font-size: 85px;
+    color: green;
+}
+
+#conteiner{
+    position: relative;
+     margin: auto;
+     width: 1200px;
+     border: 10px solid black;
+     border-radius: 20px;
+     background-color:#fb923c;
+}
+#form-conteiner{
+    padding: 40px 40px;
+    text-align: center;
+}
+#classes{
+    display: flex;
+    justify-content: space-around;
+}
+#classes div{
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+    height: 390px;
+}
+#classes a{
+    color:white;
+    font-size: 27px;
+    text-decoration: none;
+    font-weight: 700;
+}
+#classes a:hover{
+    text-shadow: 0 0 10px snow;
+    font-size: 36px;
+}
+h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#warrior{
+    margin-top: 10px;
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+#rogue{
+    margin-top: 35.5px;
+    display: block;
+    margin-left: 33px;
+    width: 230px;
+    height: 270px;
+}
+#mage{
+    margin-top: 17px;
+    display: block;
+    margin-left: 20px;
+    width: 290px;
+    height: 290px;
+}
+p{
+    font-size: 110%;
+    color:honeydew;
+    font-weight: 400;
+    margin-top: 4px;
+}
+span{
+    font-size: 30px;
+    font-weight: 500;
+    color: blue;
+}
+#button-a{
+    text-decoration: none;
+}
+.try-button{
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px;
+    width: 140px;
+    background-color: red;
+    padding: 14px 28px;
+    margin:auto;
+}
+.try-button a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+#back-home-page{
+    width: auto;
+}
+#back{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+}
+#back-link{
+    padding-top: 14px;
+}
+#fight{
+    display: inline-block;
+    border: 2px solid black;
+    font-size: 200%;
+    border-radius: 5px;
+    background-color: red;
+    padding: 12px 24px;
+}
+#chapters{
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    width: 700px;
+    height: 650px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 10px solid black;
+    border-radius: 10px;
+    background-color:rgb(209, 183, 66);
+}
+#chapters :nth-child(5n) button{
+    background-color: rgb(85, 9, 9);
+}
+#chapters div{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+}
+#chapters button{
+    padding: 20px;
+    width: 195.22px;
+    font-size: 2.5em;
+    background-color:#555555;
+    color: white;
+}
+#chapters button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+#chapters button:active{
+    background-color: darkgreen;
+}
+#chapters #close-level-page{
+    height: auto;
+    width: auto;
+    padding: 10px;
+    font-size:100%;
+    position: absolute;
+    right: -44px;
+    top: -5px;
+    background-color: red;
+    color: white;
+}
