@@ -20,4 +20,13 @@ closelevelpage.addEventListener('click' ,function handleClick(){
 
 });
 
+const urlParams = new URLSearchParams(window.location.search);
+const playerName = urlParams.get('playerName');
+
+document.getElementById('player').innerHTML = "Name: " + playerName;
+document.getElementById('character-name').innerHTML = playerName;
+
+
+
+
 
