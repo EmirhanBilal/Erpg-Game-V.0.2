@@ -142,7 +142,13 @@ span{
     background-color:rgb(209, 183, 66);
 }
 #chapters :nth-child(5n) button{
-    background-color: rgb(85, 9, 9);
+    background-color: rgb(202, 13, 13);
+}
+#chapters :nth-child(5n) button:hover{
+    background-color: darkred;
+}
+#chapters :nth-child(5n) button:active{
+    background-color: rgb(83, 8, 8);
 }
 #chapters div{
     display: inline-block;
